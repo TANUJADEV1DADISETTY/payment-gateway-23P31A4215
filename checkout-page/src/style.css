@@ -1,0 +1,127 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CARD */
+[data-test-id="checkout-container"] {
+  background: #ffffff;
+  width: 380px;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* ORDER SUMMARY */
+[data-test-id="order-summary"] {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+[data-test-id="order-summary"] h2 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+[data-test-id="order-summary"] span {
+  font-weight: 600;
+}
+
+/* PAYMENT METHOD BUTTONS */
+[data-test-id="payment-methods"] {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+[data-test-id="payment-methods"] button {
+  flex: 1;
+  padding: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+[data-test-id="payment-methods"] button:hover {
+  background: #556cd6;
+}
+
+/* FORMS */
+form {
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button[data-test-id="pay-button"] {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button[data-test-id="pay-button"]:hover {
+  background: #218838;
+}
+
+/* PROCESSING */
+[data-test-id="processing-state"] {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* SUCCESS */
+[data-test-id="success-state"] {
+  text-align: center;
+  margin-top: 20px;
+  color: #2e7d32;
+}
+
+[data-test-id="success-state"] h2 {
+  margin-bottom: 10px;
+}
+
+/* ERROR */
+[data-test-id="error-state"] {
+  text-align: center;
+  margin-top: 20px;
+  color: #c62828;
+}
+
+[data-test-id="retry-button"] {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #c62828;
+  color: white;
+  cursor: pointer;
+}
